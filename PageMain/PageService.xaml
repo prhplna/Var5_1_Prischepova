@@ -1,0 +1,26 @@
+﻿<Page x:Class="Var5_1_Prischepova.PageMain.PageService"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Var5_1_Prischepova.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Список услуг школы языков «Леарн»">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="350*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0">
+            <Button x:Name="BtnExam" Content="Подготовка к экзамену" Style="{StaticResource ButtonB}" Click="BtnExam_Click"/>
+            <Button x:Name="BtnLessForStudent" Content="Групповые уроки для студентов/школьников" Style="{StaticResource ButtonB}" Click="BtnLessForStudent_Click"/>
+            <Button x:Name="BtnLessForAdults" Content="Групповые уроки для взрослых" Style="{StaticResource ButtonB}" Click="BtnLessForAdults_Click"/>
+            <Button x:Name="BtnWithTeacher" Content="С преподавателями" Style="{StaticResource ButtonB}" Click="BtnWithTeacher_Click"/>
+            <Button x:Name="BtnOnline" Content="Онлайн-уроки" Style="{StaticResource ButtonB}" Click="BtnOnline_Click"/>
+            <Button x:Name="BtnMovieClub" Content="Киноклуб" Style="{StaticResource ButtonB}" Click="BtnMovieClub_Click"/>
+        </StackPanel>
+        <Button x:Name="BtnAdmin" Grid.Row="1" HorizontalAlignment="Left" Content="Перейти в режим Администратора" Click="BtnAdmin_Click" Style="{StaticResource ButtonB}"/>
+    </Grid>
+</Page>

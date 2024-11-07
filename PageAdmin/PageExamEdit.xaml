@@ -1,0 +1,51 @@
+﻿<Page x:Class="Var5_1_Prischepova.PageAdmin.PageExam"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Var5_1_Prischepova.PageAdmin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageExam">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image  Grid.Column="0" Grid.Row="0"/>
+        <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="0">
+            <Label Content="Подготовка к экзамену ACT" Style="{StaticResource Lab}"/>
+            <Label Content="1440 рублей за 50 минут" Style="{StaticResource Lab}"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Редактировать" Style="{StaticResource ButtonA}"/>
+                <Button Content="Удалить" Style="{StaticResource ButtonA}"/>
+            </StackPanel>
+        </StackPanel>
+        <Image  Grid.Column="0" Grid.Row="1"/>
+        <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1">
+            <Label Content="Подготовка к экзамену GMAT" Style="{StaticResource Lab}"/>
+            <Label Content="1̶1̶5̶0̶  1092,5 рублей за 70 минут" Style="{StaticResource Lab}"/>
+            <Label Content="* 5% скидка" Style="{StaticResource Lab}"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Редактировать" Style="{StaticResource ButtonA}"/>
+                <Button Content="Удалить" Style="{StaticResource ButtonA}"/>
+            </StackPanel>
+        </StackPanel>
+        <Image  Grid.Column="0" Grid.Row="2"/>
+        <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="2">
+            <Label Content="Подготовка к экзамену GRE" Style="{StaticResource Lab}"/>
+            <Label Content="1̶3̶0̶0̶  1040 рублей за 80 минут" Style="{StaticResource Lab}"/>
+            <Label Content="* 20% скидка" Style="{StaticResource Lab}"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Редактировать" Style="{StaticResource ButtonA}"/>
+                <Button Content="Удалить" Style="{StaticResource ButtonA}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
